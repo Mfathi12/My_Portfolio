@@ -1,0 +1,20 @@
+.p-profile{
+    background:url(/assets/2.jpg) ;
+    width: 80%;
+    height: 550px;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.p-tag{
+    background: #bc8fc1;
+    color: aliceblue;
+    padding: 5px 10px;
+    font-size:14px;
+}
+
+.p{
+    color: #cacaca;
+    width: 80%;
+}

@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="form-container">
+      <h2>Add Your skill</h2>
+  
+      <!-- Form for updating information -->
+      <form (ngSubmit)="onSubmit()">
+        <!-- skill Name -->
+        <div class="form-group">
+          <label for="skillName">New skill Name</label>
+          <input type="text" id="skillName" name="title" [(ngModel)]="title" placeholder="Enter your skil name" required>
+        </div>
+  
+        <!-- skill Details -->
+        <div class="form-group">
+          <label for="skillDetails">Details of the skill</label>
+          <textarea id="skillDetails" name="description" [(ngModel)]="description" placeholder="Add skill Details" rows="6" required></textarea>
+        </div>
+  
+        <!-- File Upload -->
+        <div class="form-group file-upload-group">
+          <label for="skillImage" class="custom-file-label">
+            <i class="fas fa-upload"></i> Upload Image for That skill
+          </label>
+          <input type="file" id="skillImage" name="skillImage" (change)="onFileSelected($event)">
+        </div>
+  
+        <!-- Submit Button -->
+        <button type="submit">Add</button>
+      </form>
+    </div>
+  </div>
+  
+  

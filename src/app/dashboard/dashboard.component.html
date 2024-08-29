@@ -1,0 +1,36 @@
+<h1>Dashboard</h1>
+
+<div class="button-container">
+  <button (click)="addProject()">Add Project</button>
+  <button (click)="addSkills()">Add Skills</button>
+</div>
+<h2 class="hproski">Projects</h2>
+<!-- Display Projects -->
+<div *ngIf="projects.length > 0; else noProjects">
+  <div *ngFor="let project of projects" class="project-card">
+    <h2>{{ project.title }}</h2>
+    <p>{{ project.description }}</p>
+    <img [src]="project.image" alt="{{ project.title }}" />
+    <button (click)="editProject(project._id)">Edit</button>
+    <button (click)="deleteProject(project._id)">Delete</button>
+  </div>
+</div>
+
+<ng-template #noProjects>
+  <p>No projects available.</p>
+</ng-template>
+<h2 class="hproski">Skills</h2>
+<!-- Display Skills -->
+<div *ngIf="skills.length > 0; else noSkills">
+  <div *ngFor="let skill of skills" class="project-card">
+    <h2>{{ skill.title }}</h2>
+    <p>{{ skill.description }}</p>
+    <img [src]="skill.image" alt="{{ skill.title }}" />
+    <button (click)="editSkill(skill._id)">Edit</button>
+    <button (click)="deleteSkill(skill._id)">Delete</button>
+  </div>
+</div>
+
+<ng-template #noSkills>
+  <p>No skills available.</p>
+</ng-template>

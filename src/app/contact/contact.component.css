@@ -1,0 +1,102 @@
+/* Container wrapper to align both containers side by side */
+.container-wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-right: 250px;
+}
+
+/* Contact form container styling */
+.form-container {
+    flex: 1;
+    max-width: 400px;
+    margin-right: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact info container styling */
+.contact-info-container {
+    flex: 1;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Centered title styling for both containers */
+.form-container p, .contact-info-container p {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Input and Textarea styling */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Button styling */
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #bc8fc1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #8f6394;
+}
+
+/* Error message styling */
+div[ngIf] {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* List styling */
+.contact-info-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info-container li {
+    font-size: 18px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+/* Icon styling */
+.contact-info-container i {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #bc8fc1;
+}

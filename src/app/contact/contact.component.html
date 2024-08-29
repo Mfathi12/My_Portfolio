@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<div class="container-wrapper">
+    <div class="form-container">
+        <p style="text-align:center;font-size:25px;">Contact</p>
+        <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" formControlName="name" placeholder="Name">
+            <div *ngIf="userForm.get('name')?.hasError('required') && userForm.get('name').touched">
+                Name is required
+            </div>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" formControlName="email">
+
+            <label for="phone">Phone:</label>
+            <input type="number" id="phone" formControlName="phone">
+
+            <label for="message">Message:</label>
+            <textarea id="message" formControlName="message" rows="4"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="contact-info-container">
+        <p style="text-align:center;font-size:25px;">My Contact Info</p>
+        <ul>
+            <li><i class="fas fa-phone"></i> Phone: 01003259451</li>
+            <li><i class="fas fa-envelope"></i> Email: mariamfathi17gmail.com</li>
+            <li><i class="fab fa-whatsapp"></i> WhatsApp: 01003259451</li>
+        </ul>
+    </div>
+</div>
+<div style="margin-top:20px"></div>

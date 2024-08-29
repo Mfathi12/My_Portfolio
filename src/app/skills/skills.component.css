@@ -1,0 +1,34 @@
+/* Container for the cards */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Spacing between cards */
+    margin: 20px 0; /* Optional: margin at the top and bottom */
+    margin-left: 370px;
+}
+
+/* Individual card styling */
+.example-card {
+    max-width: 350px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+    .header{
+        font-family:Arial, Helvetica, sans-serif;
+        margin-left: 410px;
+        margin-bottom: 20px;
+    }
+    .skill-img{
+        width:90%;
+        height: 300px;
+        margin-left: 10px;
+    }
+
+    .skill-title {
+        font-size: 24px; /* Adjust the font size as needed */
+        font-weight: bold; /* Optional: make the title bold */
+    }
